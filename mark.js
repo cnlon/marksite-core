@@ -1,6 +1,6 @@
 const marked = require('./marked')
 
-const LINKED_MARKDOWN_RE = /<script[^>]*>([^]*)<\/script>([^]*)$/
+const LINKED_MARKDOWN_RE = /^\W*<script[^>]*>([^]*?)<\/script>([^]*)$/
 
 class MarkedPair {
   constructor ({
